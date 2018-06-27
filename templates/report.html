@@ -1,0 +1,10 @@
+{% extends "admin/base_site.html" %}
+{% block title %}Stats title{% endblock %}
+{% block content %}
+    <p> User's today {{ user_today }}</p>
+    <p> User's this week {{ user_week }}</p>
+    <p>User's this month {{ user_month }}</p>
+    <p> API hit's today {{ api_today }}</p>
+    <p> API hit's this week {{ api_week }}</p>
+    <p> API hit's this month {{ api_month }}</p>
+{% endblock %}
