@@ -49,3 +49,10 @@ class Account(AbstractBaseUser, PermissionsMixin):
         return str(self.login)
 
 
+class APIReport(models.Model):
+
+    api_url = models.URLField(null=True, blank=True)
+    date = models.DateField(auto_now_add=True)
+
+
+
