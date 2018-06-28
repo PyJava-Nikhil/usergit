@@ -49,3 +49,5 @@ USEFUL API ENDPOINT -
 3 -> A search filter is also applied to search the user on basis of date added and user's login username.
 
 4-> Thumbnail of the user avatar is also availble for every user if avatar_url is not "".
+
+5 -> Celery is used to craete and update user's in background while getting data from github api. So if you do not want to use celery then please remove .delay from line number 42 in accounts/views.py and it will sequentially with the code.
