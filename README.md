@@ -21,6 +21,12 @@ DATABASE SETTINGS USED -
     }
     }
 
+-> PLEASE USE THIS COMMAND TO CREATE TABBLES IN POSTGRES DATABASE IN FOLLOWING ORDER: - 
+    
+    python manage.py makemigrations accounts
+    python manage.py migrate
+    RUN THIS INSIDE A VIRTUAL ENVIROMENT
+
 Reason to use postgresql database was to hold a lot of user data that was returned from github search api and if needed tha data can be served more faster.
 
 
